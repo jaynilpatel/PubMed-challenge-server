@@ -1,13 +1,20 @@
 from urllib import parse
-from . import ncbi_dbs
-
+from . import config
 
 def searchRequest(database, url):
+    """
+        Validate request @ ../search/db/<database>.
+        
+        @param database: name of database.
+        @param url: url to be validated. ie. request.url
+        @return: dict of query.
+    """
+
     try:
         queryDict = dict(parse.parse_qsl(parse.urlsplit(url).query))
         # check database name
         # check keywords encoded in url or not
-        if database in ncbi_dbs.db_Mappings.keys() and "keywords" in queryDict.keys():
+        if database in config.DB_MAPPING.keys() and "keywords" in queryDict.keys():
             return queryDict
         else:
             return False
