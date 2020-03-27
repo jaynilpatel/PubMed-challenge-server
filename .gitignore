@@ -2,4 +2,4 @@
 /__pycache__
 /services/__pycache__
 
-.ncbi-api.log
+ncbi-api.log
