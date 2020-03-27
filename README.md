@@ -1,9 +1,16 @@
 # PubMed-challenge-server
 
-# PubMed Flask Server
-Requirements: Python 3.5+ along with pip (https://www.python.org/downloads/)
+## PubMed Flask Server
+
+Key features:
+- Uses NCBI's public APIs, specifically the PubMed database
+- Automatic logging of requests
+- Production ready environment with gunicorn
 
 #### Setup
+
+Requirements: Python 3.5+ along with pip (https://www.python.org/downloads/)
+
 
 Install virtualenv:
 ```
@@ -50,4 +57,4 @@ To deactivate virtualenv:
 ```
 <br>
 
-- To host this API on cloud instance, follow this step by step procedure: https://pyliaorachel.github.io/blog/tech/system/2017/07/07/flask-app-with-gunicorn-on-nginx-server-upon-aws-ec2-linux.html
+- To host this API on cloud instance (AWS EC2 linux), follow this step by step procedure: https://pyliaorachel.github.io/blog/tech/system/2017/07/07/flask-app-with-gunicorn-on-nginx-server-upon-aws-ec2-linux.html
