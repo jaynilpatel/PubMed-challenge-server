@@ -140,9 +140,9 @@ def makeUrl(url, queryDict):
         maxdate = queryDict["max-date"].split("-")
         maxdate = "/".join(maxdate)
         if queryDict["datetype"] == "pub":
-            url += "&mindate={}[pdat]&maxdate={}[pdat]".format(mindate, maxdate)
+            url += "&mindate={}&maxdate={}&datetype=pdat".format(mindate, maxdate)
         else:
-            url += "&mindate={}&maxdate={}".format(mindate, maxdate)
+            url += "&mindate={}&maxdate={}&datetype=mdat".format(mindate, maxdate)
 
     # results in last nn days
     if "quick-filter" in queryDict.keys():
@@ -175,14 +175,14 @@ def addAbstract(data, summary, database):
         return summary
     
     try:
-        # For PubmedArticles
+    # For PubmedArticles
         if "PubmedArticle" in data["PubmedArticleSet"].keys():
             publications = data["PubmedArticleSet"]["PubmedArticle"]
             for publication in publications:
                 uid = publication["MedlineCitation"]["PMID"]["#text"]
                 abstract = ""
                 # check if publication has abstract or not
-                if summary["result"][uid]["attributes"] == ["Has Abstract"]:
+                if "Abstract" in publication["MedlineCitation"]["Article"].keys():
                     abstract = publication["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
                     if type(abstract) is list:
                         complete_abstract = ""
@@ -193,7 +193,7 @@ def addAbstract(data, summary, database):
                         abstract = abstract["#text"]
                 # create new key "abstract" and add value
                 summary["result"][uid]["abstract"] = abstract
-       
+        
 
         # For PubMedBookArticle
         if "PubmedBookArticle" in data["PubmedArticleSet"].keys():
@@ -207,7 +207,7 @@ def addAbstract(data, summary, database):
                 
                 abstract = ""
                 # check if publication has abstract or not
-                if summary["result"][uid]["attributes"] == ["Has Abstract"]:
+                if "Abstract" in publication["BookDocument"].keys():
                     abstract = publication["BookDocument"]["Abstract"]["AbstractText"]
                     if type(abstract) is list:
                         complete_abstract = ""
@@ -221,5 +221,5 @@ def addAbstract(data, summary, database):
     
     except Exception as ae:
         print("addAbstractException: ", str(ae))
-        logger.error(ae)
+        logger.exception(ae)
     return summary

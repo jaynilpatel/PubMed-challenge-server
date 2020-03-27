@@ -15,7 +15,7 @@ Build a new virtualenv:
 $ virtualenv .venv
 ```
 
-Run Virtual env:
+Run virtualenv:
 ```
 $ source ./.venv/bin/activate
 ```

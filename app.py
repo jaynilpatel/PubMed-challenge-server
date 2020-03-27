@@ -79,7 +79,7 @@ def search(database):
     except Exception as ae:
         print("SearchException: ",ae)
         # TODO: write error logs
-        logger.error("SearchException", str(ae))
+        logger.exception("SearchException", str(ae))
         return Response("Flask server error: " + str(ae), status=400)
 
 
@@ -105,7 +105,7 @@ def searchPagination(database, page):
     except Exception as ae:
         print("PaginationException: ", ae)
         # TODO: write error logs
-        logger.error("PaginationException", str(ae))
+        logger.exception("PaginationException", str(ae))
         return Response("Flask server error: " + str(ae), status=400)
 
 

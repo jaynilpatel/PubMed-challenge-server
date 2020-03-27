@@ -45,3 +45,223 @@
 2020-03-27 03:28 WARNING  _internal.py:113  * Debugger is active!
 2020-03-27 03:28 INFO     _internal.py:113  * Debugger PIN: 237-013-571
 2020-03-27 03:28 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:24 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:24 INFO     _internal.py:113  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2020-03-27 12:24 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:24 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:24 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:24 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:24 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term="heart"[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:24 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23205442_130.14.22.33_9001_1585326273_1042103445_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:24 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32186283,32165579,32164090,32160175,32159612,32146765,32144918,32135613,32135608,32132304,32132295,32130798,32127512,32124809,32124805,32118793,32115979,32102146,32102145,32102144
+2020-03-27 12:24 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:24:34] "[31m[1mGET /search/db/PubMed_DB?keywords=%22heart%22 HTTP/1.1[0m" 400 -
+2020-03-27 12:26 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/app.py', reloading
+2020-03-27 12:26 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:26 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:26 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:26 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:26 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term="heart"[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:26 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63159669_130.14.18.97_9001_1585326369_763980897_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:26 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32186283,32165579,32164090,32160175,32159612,32146765,32144918,32135613,32135608,32132304,32132295,32130798,32127512,32124809,32124805,32118793,32115979,32102146,32102145,32102144
+2020-03-27 12:26 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:26:11] "[35m[1mGET /search/db/PubMed_DB?keywords=%22heart%22 HTTP/1.1[0m" 500 -
+2020-03-27 12:31 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 12:31 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:33 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:33 INFO     _internal.py:113  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2020-03-27 12:33 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:33 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:33 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:33 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:33 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term="heart"[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:33 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23257435_130.14.22.33_9001_1585326801_97261914_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:33 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32186283,32165579,32164090,32160175,32159612,32146765,32144918,32135613,32135608,32132304,32132295,32130798,32127512,32124809,32124805,32118793,32115979,32102146,32102145,32102144
+2020-03-27 12:33 ERROR    services.py:224 'Abstract'
+Traceback (most recent call last):
+  File "/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py", line 186, in addAbstract
+    abstract = publication["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
+KeyError: 'Abstract'
+2020-03-27 12:33 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:33:22] "[37mGET /search/db/PubMed_DB?keywords=%22heart%22 HTTP/1.1[0m" 200 -
+2020-03-27 12:34 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 12:34 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:34 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:34 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:34 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:34 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 12:34 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:34 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:34 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:34 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:34 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term="heart"[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:34 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63067116_130.14.22.76_9001_1585326885_1056261301_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:34 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32186283,32165579,32164090,32160175,32159612,32146765,32144918,32135613,32135608,32132304,32132295,32130798,32127512,32124809,32124805,32118793,32115979,32102146,32102145,32102144
+2020-03-27 12:34 ERROR    services.py:228 'Abstract'
+Traceback (most recent call last):
+  File "/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py", line 190, in addAbstract
+    abstract = publication["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
+KeyError: 'Abstract'
+2020-03-27 12:34 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:34:46] "[37mGET /search/db/PubMed_DB?keywords=%22heart%22 HTTP/1.1[0m" 200 -
+2020-03-27 12:40 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 12:40 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:40 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:40 INFO     _internal.py:113  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2020-03-27 12:40 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:40 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:40 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:40 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:40 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term="heart"[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:40 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23300312_130.14.22.33_9001_1585327230_1306968558_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:40 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32186283,32165579,32164090,32160175,32159612,32146765,32144918,32135613,32135608,32132304,32132295,32130798,32127512,32124809,32124805,32118793,32115979,32102146,32102145,32102144
+2020-03-27 12:40 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:40:31] "[37mGET /search/db/PubMed_DB?keywords=%22heart%22 HTTP/1.1[0m" 200 -
+2020-03-27 12:41 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 12:41 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 12:41 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 12:41 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 12:41 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 12:41 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term="heart"[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:41 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63252229_130.14.18.97_9001_1585327299_48625116_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:41 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32186283,32165579,32164090,32160175,32159612,32146765,32144918,32135613,32135608,32132304,32132295,32130798,32127512,32124809,32124805,32118793,32115979,32102146,32102145,32102144
+2020-03-27 12:41 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:41:39] "[37mGET /search/db/PubMed_DB?keywords=%22heart%22 HTTP/1.1[0m" 200 -
+2020-03-27 12:42 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=heart[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 12:42 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23312063_130.14.22.33_9001_1585327345_317607339_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:42 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32165579,32164090,32127512,32047325,32032743,32014144,32000221,31978394,31977349,31958420,31954162,31932058,31926714,31839228,31759074,31715047,31660767,31653423,31597617,31597615
+2020-03-27 12:42 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:42:30] "[37mGET /search/db/PubMed_DB?keywords=heart&sortBy=relevance& HTTP/1.1[0m" 200 -
+2020-03-27 12:43 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23312063_130.14.22.33_9001_1585327345_317607339_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=json
+2020-03-27 12:43 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=31594661,31495554,31400816,31399236,31358330,31350022,31312877,31255346,31230808,31202446,31101350,31029445,30824341,32186283,32159612,32055926,32048009,32045570,32035299,32020272
+2020-03-27 12:43 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:43:24] "[37mGET /search/db/PubMed_DB/pg/2 HTTP/1.1[0m" 200 -
+2020-03-27 12:43 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 12:43 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63120314_130.14.22.76_9001_1585327415_168203797_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:43 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32143231,32078705,31812220,31677213,30879379,32155280,32135605,32105091,31793015,31715080,32144930,32100503,32051086,32044930,32023379,32007172,31935761,31881223,31774371
+2020-03-27 12:43 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:43:36] "[37mGET /search/db/PubMed_DB?keywords=asthma&sortBy=relevance& HTTP/1.1[0m" 200 -
+2020-03-27 12:44 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 12:44 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63268969_130.14.18.97_9001_1585327463_2093290035_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:44 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32143231,32078705,31812220,31677213,30879379,32155280,32135605,32105091,31793015,31715080,32144930,32100503,32051086,32044930,32023379,32007172,31935761,31881223,31774371
+2020-03-27 12:44 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:44:24] "[37mGET /search/db/PubMed_DB?keywords=asthma&sortBy=relevance& HTTP/1.1[0m" 200 -
+2020-03-27 12:44 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:44 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63127398_130.14.22.76_9001_1585327483_176939472_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:44 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32160173,32155280,32144930,32144921,32143231,32135605,32124823,32124802,32105091,32100503,32078705,32062898,32058573,32058572,32051375,32051367,32051086,32044931,32044930
+2020-03-27 12:44 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:44:44] "[37mGET /search/db/PubMed_DB?keywords=asthma& HTTP/1.1[0m" 200 -
+2020-03-27 12:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11[pdat]&maxdate=2020/02/11[pdat]
+2020-03-27 12:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63131030_130.14.22.76_9001_1585327520_455052215_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:45 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:45:20] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 12:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11
+2020-03-27 12:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63275598_130.14.18.97_9001_1585327529_1298726132_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:45 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:45:29] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 12:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11[pdat]&maxdate=2020/02/11[pdat]
+2020-03-27 12:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23331030_130.14.22.33_9001_1585327533_1573729092_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:45 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:45:33] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 12:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11
+2020-03-27 12:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63191044_130.14.18.48_9001_1585327534_1834262343_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:45 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:45:35] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 12:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11[pdat]&maxdate=2020/02/11[pdat]
+2020-03-27 12:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23331307_130.14.22.33_9001_1585327536_372388300_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:45 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:45:36] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 12:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 12:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23331431_130.14.22.33_9001_1585327537_1482257258_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:45 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32160173,32155280,32144930,32144921,32143231,32135605,32124823,32124802,32105091,32100503,32078705,32062898,32058573,32058572,32051375,32051367,32051086,32044931,32044930
+2020-03-27 12:45 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:45:38] "[37mGET /search/db/PubMed_DB?keywords=asthma& HTTP/1.1[0m" 200 -
+2020-03-27 12:58 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&sort=first author
+2020-03-27 12:58 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23409349_130.14.22.33_9001_1585328320_1870438767_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 12:58 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=30992630,30856157,30681662,30153892,29794214,29327949,29485975,30198698,29553116,28960112,28975749,28566278,28262054,28273715,28572452,28691619,28693053,28701317,30726627,28880851
+2020-03-27 12:58 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 12:58:41] "[37mGET /search/db/PubMed_DB?=null&keywords=asthma&sortBy=first%20author& HTTP/1.1[0m" 200 -
+2020-03-27 13:02 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 13:02 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23431777_130.14.22.33_9001_1585328561_342140399_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:02 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32160173,32155280,32144930,32144921,32143231,32135605,32124823,32124802,32105091,32100503,32078705,32062898,32058573,32058572,32051375,32051367,32051086,32044931,32044930
+2020-03-27 13:02 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:02:42] "[37mGET /search/db/PubMed_DB?keywords=asthma& HTTP/1.1[0m" 200 -
+2020-03-27 13:03 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 13:03 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 13:03 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 13:03 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 13:03 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 13:04 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=pdat
+2020-03-27 13:04 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63298996_130.14.18.48_9001_1585328644_973323667_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:04 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32044931,32044930,32044924
+2020-03-27 13:04 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:04:04] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:04 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 13:04 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63240961_130.14.22.76_9001_1585328648_198047504_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:04 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32160173,32155280,32144930,32144921,32143231,32135605,32124823,32124802,32105091,32100503,32078705,32062898,32058573,32058572,32051375,32051367,32051086,32044931,32044930
+2020-03-27 13:04 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:04:09] "[37mGET /search/db/PubMed_DB?keywords=asthma& HTTP/1.1[0m" 200 -
+2020-03-27 13:04 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=pdat
+2020-03-27 13:04 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63385153_130.14.18.97_9001_1585328652_1087174514_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:04 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32044931,32044930,32044924
+2020-03-27 13:04 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:04:12] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:04 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 13:04 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23440484_130.14.22.33_9001_1585328654_256612727_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:04 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32160173,32155280,32144930,32144921,32143231,32135605,32124823,32124802,32105091,32100503,32078705,32062898,32058573,32058572,32051375,32051367,32051086,32044931,32044930
+2020-03-27 13:04 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:04:16] "[37mGET /search/db/PubMed_DB?keywords=asthma& HTTP/1.1[0m" 200 -
+2020-03-27 13:04 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 13:04 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63301290_130.14.18.48_9001_1585328669_1068396533_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:04 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32150088,32128744,32050342,32004509,31972209,31962156,31954161,31935508,31912588,31882189,31829038,31793823,31771918,31448977,31335987,30145915,32198879,32183865,32174064,32138477
+2020-03-27 13:04 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:04:30] "[37mGET /search/db/PubMed_DB?keywords=kidney&sortBy=relevance& HTTP/1.1[0m" 200 -
+2020-03-27 13:04 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&sort=pub date
+2020-03-27 13:04 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63388868_130.14.18.97_9001_1585328692_1851642533_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:04 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=30145915,31962156,31544568,31448977,31771918,32050342,31812057,31128898,32032645,32004509,31954161,32198879,31935508,32183865,32174064,31811911,31809837,32128744,32045244,31829038
+2020-03-27 13:04 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:04:53] "[37mGET /search/db/PubMed_DB?=null&keywords=kidney&sortBy=pub%20date& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63392737_130.14.18.97_9001_1585328733_918220334_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:33] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=kidney&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=pdat
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63393056_130.14.18.97_9001_1585328737_879062043_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:37] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=kidney&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63308000_130.14.18.48_9001_1585328741_524066074_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:41] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=kidney&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&sort=pub date
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63249808_130.14.22.76_9001_1585328743_29598522_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=30145915,31962156,31544568,31448977,31771918,32050342,31812057,31128898,32032645,32004509,31954161,32198879,31935508,32183865,32174064,31811911,31809837,32128744,32045244,31829038
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:43] "[37mGET /search/db/PubMed_DB?=null&keywords=kidney&sortBy=pub%20date& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:43] "[31m[1mGET /search/db/PubMed_DB?keywords=kidney&sortBy=relevance& HTTP/1.1[0m" 400 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63308509_130.14.18.48_9001_1585328747_1642997713_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32160173,32155280,32144930,32144921,32143231,32135605,32124823,32124802,32105091,32100503,32078705,32062898,32058573,32058572,32051375,32051367,32051086,32044931,32044930
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:48] "[37mGET /search/db/PubMed_DB?keywords=asthma& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=pdat
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63308733_130.14.18.48_9001_1585328749_889184719_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32044931,32044930,32044924
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:50] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:05 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11
+2020-03-27 13:05 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23449579_130.14.22.33_9001_1585328751_1156794294_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:05 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:05:51] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:08 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 13:08 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 13:08 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 13:08 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 13:08 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 13:08 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=mdat
+2020-03-27 13:08 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23466541_130.14.22.33_9001_1585328929_933540585_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:08 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=31801507,31761597,31672350,31603425,31522441,31522432,31496409,31438628,31257167,31248809,31178331,31160195,31153755,31064688,30447649,30118243,29731045,27698615,25506278,16625584
+2020-03-27 13:08 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:08:50] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:09 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=mdat
+2020-03-27 13:09 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23470926_130.14.22.33_9001_1585328976_2032215205_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:09 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=31801507,31761597,31672350,31603425,31522441,31522432,31496409,31438628,31257167,31248809,31178331,31160195,31153755,31064688,30447649,30118243,29731045,27698615,25506278,16625584
+2020-03-27 13:09 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:09:37] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:09 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 13:09 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 13:09 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 13:09 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 13:09 INFO     _internal.py:113  * Debugger PIN: 262-483-432
+2020-03-27 13:09 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/02/11&maxdate=2020/02/11&datetype=mdat
+2020-03-27 13:09 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63332464_130.14.18.48_9001_1585328997_557428489_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:09 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=31801507,31761597,31672350,31603425,31522441,31522432,31496409,31438628,31257167,31248809,31178331,31160195,31153755,31064688,30447649,30118243,29731045,27698615,25506278,16625584
+2020-03-27 13:09 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:09:58] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-02-11&min-date=2020-02-11& HTTP/1.1[0m" 200 -
+2020-03-27 13:10 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/03/01&maxdate=2020/03/12&datetype=mdat
+2020-03-27 13:10 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23473639_130.14.22.33_9001_1585329005_128118450_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:10 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32144930,32144921,32143231,32124823,32124802,32078705,32062898,32051375,32051367,32044931,32044930,31958237,31955671,31946161,31935761,31900675,31869344,31865326,31811124,31757673
+2020-03-27 13:10 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:10:06] "[37mGET /search/db/PubMed_DB?datetype=mod&keywords=asthma&max-date=2020-03-12&min-date=2020-03-01& HTTP/1.1[0m" 200 -
+2020-03-27 13:10 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=asthma[mesh]&retmax=20&usehistory=y&retmode=json&mindate=2020/03/01&maxdate=2020/03/12&datetype=pdat
+2020-03-27 13:10 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_23474289_130.14.22.33_9001_1585329012_1373388907_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:10 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32164096,32155280,32143231,32135605,32105091,32078705,31812220,31793015,31715080,31677213,30879379
+2020-03-27 13:10 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:10:13] "[37mGET /search/db/PubMed_DB?datetype=pub&keywords=asthma&max-date=2020-03-12&min-date=2020-03-01& HTTP/1.1[0m" 200 -
+2020-03-27 13:15 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 13:15 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63303269_130.14.22.76_9001_1585329312_427767357_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:15 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32150088,32128744,32050342,32004509,31972209,31962156,31954161,31935508,31912588,31882189,31829038,31793823,31771918,31448977,31335987,30145915,32198879,32183865,32174064,32138477
+2020-03-27 13:15 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:15:13] "[37mGET /search/db/PubMed_DB?keywords=kidney&sortBy=relevance& HTTP/1.1[0m" 200 -
+2020-03-27 13:15 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=kidney[mesh]&retmax=20&usehistory=y&retmode=json&sort=first author
+2020-03-27 13:15 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_63362034_130.14.18.48_9001_1585329316_1313564545_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 13:15 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=31427809,30665951,31826288,29802824,29390212,29390209,30122699,30122698,28898224,28381461,28356288,28298359,28124677,28092230,29222147,28398306,27574122,27403782,27343675,27029049
+2020-03-27 13:15 INFO     _internal.py:113 127.0.0.1 - - [27/Mar/2020 13:15:17] "[37mGET /search/db/PubMed_DB?=null&keywords=kidney&sortBy=first%20author& HTTP/1.1[0m" 200 -
+2020-03-27 13:19 INFO     _internal.py:113  * Detected change in '/home/jaynil/Desktop/Novartis/PubMed-challenge-server/services/services.py', reloading
+2020-03-27 13:19 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 13:19 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 13:19 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 13:19 INFO     _internal.py:113  * Debugger PIN: 262-483-432
