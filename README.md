@@ -11,6 +11,7 @@ Key features:
 
 Requirements: Python 3.5+ along with pip (https://www.python.org/downloads/)
 
+<br/>
 
 Install virtualenv:
 ```
@@ -53,7 +54,7 @@ To stop the server, press Ctrl+C.
 
 To deactivate virtualenv:
 ```
-(.venv) $ deactivate # deactivate the virtualenv
+(.venv) $ deactivate 
 ```
 <br>
 
