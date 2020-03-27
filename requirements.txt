@@ -23,3 +23,4 @@ six==1.11.0
 urllib3==1.25.8
 Werkzeug==1.0.0
 gunicorn==20.0.4
+xmltodict==0.12.0
