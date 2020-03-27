@@ -1,3 +1,5 @@
+### Best to store these in Redis db/environment variables and retrive it later
+
 """
     Base url of the NCBI API.
 """
@@ -12,6 +14,6 @@ RETMAX=20
     Contains mappings for database which is requested from client to the database on NCBI server.
 """
 DB_MAPPING = {
-    # from client: db_name at NCBI
+    # client-db: server-db-real
     "PubMed_DB": "pubmed"
 }

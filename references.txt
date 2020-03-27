@@ -1,2 +1,0 @@
-Parse query parameters
-https://stackoverflow.com/questions/21584545/url-query-parameters-to-dict-python

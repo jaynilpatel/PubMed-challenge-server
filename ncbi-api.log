@@ -1,0 +1,34 @@
+2020-03-27 02:45 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:45 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59778492_130.14.22.76_9001_1585291529_1559930493_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:45 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32200389,32200387,32198148,32193900,32193367,32192313,32192309,32192307,32192305,32192303,32192301,32192299,32192297,32192295,32187938,32187928,32187926,32187472,32178792,32176115
+2020-03-27 02:46 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:46 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_19979147_130.14.22.33_9001_1585291591_20914969_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:46 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32200389,32200387,32198148,32193900,32193367,32192313,32192309,32192307,32192305,32192303,32192301,32192299,32192297,32192295,32187938,32187928,32187926,32187472,32178792,32176115
+2020-03-27 02:49 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:49 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_19991494_130.14.22.33_9001_1585291740_671336693_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:49 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32200389,32200387,32198148,32193900,32193367,32192313,32192309,32192307,32192305,32192303,32192301,32192299,32192297,32192295,32187938,32187928,32187926,32187472,32178792,32176115
+2020-03-27 02:49 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:49 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59799678_130.14.22.76_9001_1585291788_2144923399_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:49 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32200389,32200387,32198148,32193900,32193367,32192313,32192309,32192307,32192305,32192303,32192301,32192299,32192297,32192295,32187938,32187928,32187926,32187472,32178792,32176115
+2020-03-27 02:51 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 02:51 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:51 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59868724_130.14.18.48_9001_1585291916_297814910_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:51 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32200389,32200387,32198148,32193900,32193367,32192313,32192309,32192307,32192305,32192303,32192301,32192299,32192297,32192295,32187938,32187928,32187926,32187472,32178792,32176115
+2020-03-27 02:51 ERROR    services.py:224 'Abstract'
+2020-03-27 02:52 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=heary[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:52 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59953713_130.14.18.97_9001_1585291928_2052037729_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:52 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=heart[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:52 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59870159_130.14.18.48_9001_1585291933_308241157_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:52 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32165579,32164090,32127512,32047325,32032743,32014144,32000221,31978394,31977349,31958420,31954162,31932058,31926714,31839228,31759074,31715047,31660767,31653423,31597617,31597615
+2020-03-27 02:54 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=heary[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:54 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59821982_130.14.22.76_9001_1585292061_1196096912_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:54 INFO     services.py:46  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer[mesh]&retmax=20&usehistory=y&retmode=json&sort=relevance
+2020-03-27 02:54 INFO     services.py:74  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_59880454_130.14.18.48_9001_1585292061_1909116299_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=json
+2020-03-27 02:54 INFO     services.py:115 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=32200389,32200387,32198148,32193900,32193367,32192313,32192309,32192307,32192305,32192303,32192301,32192299,32192297,32192295,32187938,32187928,32187926,32187472,32178792,32176115
+2020-03-27 02:54 ERROR    services.py:224 'Abstract'
+2020-03-27 02:57 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 02:57 INFO     _internal.py:113  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2020-03-27 02:57 INFO     _internal.py:113  * Restarting with stat
+2020-03-27 02:57 INFO     app.py:24  Flask NCBI API started.
+2020-03-27 02:57 WARNING  _internal.py:113  * Debugger is active!
+2020-03-27 02:57 INFO     _internal.py:113  * Debugger PIN: 237-013-571
